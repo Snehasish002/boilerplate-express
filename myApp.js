@@ -58,6 +58,31 @@ app.get("/now", (req, res, next) => {
     })
 })
 
+//example
+
+// app.get("/greet", (req, res, next) => {
+//     req.greeting = "Hello, ";  // middleware adds a greeting
+//     next();  // moves to the next function
+// }, (req, res) => {
+//     res.send(req.greeting + "Snehasish!");  // sends back the final response
+// });
+
+//9
+app.get("/:word/echo", (req,res) => {
+    res.json({
+        echo: req.params.word
+    })
+})
+
+
+//10
+app.get("/name", (req,res) => {
+    res.json({
+        name: req.query.first+" "+req.query.last
+    })
+})
+
+
 
 
 
