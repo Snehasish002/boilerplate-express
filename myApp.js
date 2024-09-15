@@ -4,10 +4,6 @@ const res = require('express/lib/response');
 let app = express();
 require("dotenv").config()
 
-function MyApp ()  {
-    return 
-}
-
 // #1
 // console.log("Hello World")
 
