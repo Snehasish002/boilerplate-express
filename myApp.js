@@ -1,6 +1,5 @@
 let express = require('express');
-const req = require('express/lib/request');
-const res = require('express/lib/response');
+
 let app = express();
 require("dotenv").config()
 
